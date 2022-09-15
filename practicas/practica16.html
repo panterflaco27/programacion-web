@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>practica 2.16</title>
+    </head>
+    <body>
+        <button><a href="/menu.html">regresar al menu</a></button>
+        <h1>formulario de visita del campus</h1>
+        <p>Llene este formulario de retroalimentacio sobre su visita al campus</p>
+        <form method="post" action="https://www.deitel.com">
+            
+            <input type="hidden" name="destinatario" 
+            value="deitel@deitel.com">
+            <input type="hidden" name="asunto" 
+            value="Formulario de retroalimentacion de visita al campus">
+            <input type="hidden" name="redirigir"
+            value="principal.html">
+
+            <p><label>Nombre:
+                <input name="nombre" type="text" size="25">
+            </label></p>
+            <p><label>Correo:
+                <input name="email" type="email" size="25">
+            </label></p>
+
+            <p>
+                <strong>Cosas que le gustaron del campus:</strong>
+
+                <label>Campus
+                    <input name="cosasgustaron" type="checkbox" value="Campus">
+                </label>
+                <label>Estudiantes
+                    <input name="cosasgustaron" type="checkbox" value="Estudiantes">
+                </label>
+                <label>Ubicaci&oacute;n
+                    <input name="cosasgustaron" type="checkbox" value="Ubicacion">
+                </label>
+                <label>Ambiente
+                    <input name="cosasgustron" type="checkbox" value="Ambiente">
+                </label>
+                <label>Dormitorios
+                    <input name="cosasgustaron" type="checkbox" value="Dormitorios">
+                </label>
+                <label>Deportes
+                    <input name="cosasgustaron" type="checkbox" value="Deportes">
+                </label>
+            </p>
+
+            <p>
+                <strong>¿Como supo de la universidad?:</strong>
+                <select name="llegouniversidad">
+                    <option selected>Amigos</option>
+                    <option>Televisi&oacute;n</option>
+                    <option>Internet</option>
+                    <option>Otro</option>
+                </select>
+            </p>
+
+            <p><label>Comentarios:<br>
+                <textarea name="comentarios"cols="36" rows="4">Escriba aqui los comentarios</textarea>
+            </label></p>
+
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Borrar">
+            </p>
+        </form>
+    </body>
+</html>
