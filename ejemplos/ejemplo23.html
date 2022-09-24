@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Posicionamiento absoluto</title>
+        <style type="text/css">
+            .imagen_fondo   {position: absolute;
+                            top: 0px;
+                            left: 0px;
+                            z-index: 1;}
+            .imagen_primerplano{position: absolute;
+                            top: 25px;
+                            left: 100px;
+                            z-index: 2;}
+            .texto          {position: absolute;
+                            top: 25px;
+                            left: 100px;
+                            z-index: 3;
+                            font-size: 20pt;
+                            font-family: tahoma, geneva, sans-serif;}
+        </style>
+    </head>
+    <body>
+        <p><img src="imagen_fondo.PNG" class="imagen_fondo"
+            alt="Primera imagen posicionada"/></p>
+        <p><img src="imagen_primerplano.PNG" class="imagen_primerplano" 
+            alt="Segunda imagen posicionada"/></p>
+        <p class="texto">Texto posicionado</p>
+    </body>
+</html>
