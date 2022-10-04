@@ -1,0 +1,39 @@
+ejemplos del capitulo 2 de html parte 1
+
+de ejemplo01.html a ejemplo15.html
+_________________________________
+practicas del capitulo 2 de html parte 1
+
+de practica01.html a practica17.html
+
+=================================
+
+ejemplos del capitulo 3 de html parte 2
+
+de ejemplo16.html a ejemplo18.html
+_________________________________
+practicas del capitulo e de html parte 2
+
+de practica18.html a practica29.html
+
+=================================
+
+ejemplos del capitulo 4 css parte 1
+
+de ejemplo19.html a ejemplo30.html
+
+ejemplo31.html y ejemplo32.html son opcionales segun el libro
+_________________________________
+practicas del capitulo 4 css parte 1
+
+de practica29.html a practica37.html
+
+=================================
+
+ejemplos del capitulo 5 css parte 2
+
+de ejemplo32.html a ejemplo49.html
+
+practicas del capitulo 5 css parte 2
+
+de practica38.html a practica53.html
