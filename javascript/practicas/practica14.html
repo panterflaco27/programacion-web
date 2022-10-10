@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Practica 6.14</title>
+        <style type="text/css">
+            em{
+                color: blue;
+                padding-left: 2em;
+            }
+            span{
+                color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <h3>Indique el orden de evaluaci&oacute;n de los operadores en cada una de las siguientes instrucciones de JavaScript, y
+            muestre el valor de x despu&eacute;s de ejecutar cada instrucci&oacute;n</h3>
+        <p>
+            <strong>a) x = 7 + 3 * 6 / 2 - 1;</strong><br>
+            <em>x = 7 + <span>3 * 6</span> / 2 - 1</em><br>
+            <em>x = 7 + <span>18 / 2</span> - 1</em><br>
+            <em>x = <span>7 + 9</span> - 1</em><br>
+            <em>x = <span>16 - 1</span></em><br>
+            <em>x = <span>15</span></em>
+        </p>
+        <p>
+            <strong>b) x = 2 % 2 + 2 * 2 - 2 / 2;</strong><br>
+            <em>x = <span>2 % 2</span> + 2 * 2 - 2 / 2</em><br>
+            <em>x = 0 + <span>2 * 2</span> - 2 / 2</em><br>
+            <em>x = 0 + 4 - <span>2 / 2</span></em><br>
+            <em>x = <span>0 + 4</span> - 1</em><br>
+            <em>x = <span>4 - 1</span></em><br>
+            <em>x = <span>3</span></em>
+        </p>
+        <p>
+            <strong>c) x = ( 3 * 9 * ( 3 + ( 9 * 3 / ( 3 ) ) ) );</strong><br>
+            <em>x = ( 3 * 9 * ( 3 + ( 9 * 3 / <span>( 3 )</span> ) ) )</em><br>
+            <em>x = ( 3 * 9 * ( 3 + ( 9 * <span>3 / 3</span> ) ) )</em><br>
+            <em>x = ( 3 * 9 * ( 3 + ( <span>9 * 1</span> ) ) )</em><br>
+            <em>x = ( 3 * 9 * ( 3 + <span>( 9 )</span> ) )</em><br>
+            <em>x = ( 3 * 9 * <span>( 3 + 9 )</span> )</em><br>
+            <em>x = (3 * 9 * <span>( 12 )</span> )</em><br>
+            <em>x = ( <span>3 * 9</span> * 12)</em><br>
+            <em>x = <span>( 27 * 12 )</span></em><br>
+            <em>x = <span>324</span></em>
+        </p>
+    </body>
+</html>
