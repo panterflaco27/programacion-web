@@ -15,29 +15,39 @@
             num3 = parseInt(val3);
 
             if(num1 < 0){
-                neg = neg++;
-                if(num2 < 0){
-                    neg = neg++;
-                    if(num3 < 0){
-                        neg = neg++;
-                    }
-                }
-            }else if(num1 > 0){
-                pos = pos++;
-                if(num2 > 0){
-                    pos = pos++;
-                    if(num3 > 0){
-                        pos = pos++;
-                    }
-                }
-            }else if(num1 == 0){
-                cero = cero++;
-                if(num2 == 0){
-                    cero = cero++;
-                    if(num3 == 0){
-                        cero = cero++;
-                    }
-                }
+                neg++;
+            }
+
+            if(num1 > 0){
+                pos++;
+            }
+
+            if(num1 == 0){
+                cero++;
+            }
+
+            if(num2 < 0){
+                neg++;
+            }
+
+            if(num2 > 0){
+                pos++;
+            }
+
+            if(num2 == 0){
+                cero++;
+            }
+
+            if(num3 < 0){
+                neg++;
+            }
+
+            if(num3 > 0){
+                pos++;
+            }
+
+            if(num3 == 0){
+                cero++;
             }
 
             document.writeln(
