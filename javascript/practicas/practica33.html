@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Practica 7.9</title>
+        <style type="text/css">
+            .ind{
+                padding-left: 3em;
+            }
+            em{
+                color: blue;
+            }
+        </style>
+    </head>
+    <body>
+        <h3>Identifique y corrija los errores en cada uno de los siguientes
+            segmento de c&oacute;digo</h3>
+        <p>
+            <strong>a) if (edad >= 65);</strong><br>
+            <strong class="ind">documento.writeln("Edad es mayor o igual que 65");</strong><br>
+            <strong>else</strong><br>
+            <strong class="ind">document.writeln("Edad es menor que 65");</strong><br>
+            <em>R: hay un error sint&aacute;ctico en la primera l&iacute;nea,
+                el ; no puede ir al final del if
+            </em>
+        </p>
+        <p>
+            <strong>b) var x = 1, total;</strong><br>
+            <strong>while (x <= 10)</strong><br>
+            <strong>{</strong><br>
+            <strong class="ind">total += x;</strong><br>
+            <strong class="ind">++x;</strong><br>
+            <strong>}</strong><br>
+            <em>R: hay un error en la declaraci&oacute;n de la variable total,
+                no tiene ningun valor inicial y por lo tanto no se modifica
+                cuando se hace total +=x;
+            </em>
+        </p>
+        <p>
+            <strong>c) var x = 1;</strong><br>
+            <strong>var total = 0;</strong><br>
+            <strong>while (x <= 100)</strong><br>
+            <strong class="ind">total +=x;</strong><br>
+            <strong class="ind">++x;</strong><br>
+            <em>R: el while no tiene definido donde comienza y termina el
+                bloque de intrucciones, por lo que se queda iterando infinitamente
+            </em>
+        </p>
+        <p>
+            <strong>d) var y = 5;</strong><br>
+            <strong>while (y > 0)</strong><br>
+            <strong>{</strong><br>
+            <strong class="ind">document.writeln(y);</strong><br>
+            <strong class="ind">++y;</strong><br>
+            <em>R: el while no tiene un cierre de bloque, por lo que tendria un error
+                sint&aacute;ctico al momento de ejecutar porque le falta un }
+            </em>
+        </p>
+    </body>
+</html>
