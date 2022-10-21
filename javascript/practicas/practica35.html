@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Practica 7.11</title>
+        <script>
+            var nreanto, kmcon, ltrsus, kmlt, ltus, total = 0, cont = 0;
+
+            var reabastecimiento, conducido, usado;
+
+            nreanto = window.prompt("Ingrese el número de reabastecimientos:");
+            reabastecimiento = parseInt(nreanto);
+
+            while (cont != reabastecimiento){
+                kmcon = window.prompt("Kilómetros recorridos en el viaje " + (cont + 1));
+                conducido = parseFloat(kmcon);
+                ltrsus = window.prompt("Litros usados en el viaje " + (cont + 1));
+                usado = parseInt(ltrsus);
+
+                kmlt = conducido/usado;
+                document.writeln("<p>kilómetros por litro del viaje " + (cont + 1) + ": <span>" + kmlt + " Km/lt</span></p>");
+                total += kmlt;
+                cont++;
+            }
+            document.writeln("<strong>Total de kilómetros por litro recorridos: " + total + " km/lt</strong>");
+        </script>
+        <style type="text/css">
+            span{
+                color: blue;
+            }
+        </style>
+    </head>
+    <body>
+    
+    </body>
+</html>
