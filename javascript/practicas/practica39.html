@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Practica 7.15</title>
+        <style>
+            .ind{
+                padding-left: 2em;
+            }
+            .ind2{
+                padding-left: 4em;
+            }
+        </style>
+        <script>
+            var num, numero, mayor = 0, cont = 0;
+
+            while(cont != 10){
+                num = window.prompt("Escrima el " + (cont+1) + " entero:");
+                numero = parseInt(num);
+
+                if(numero >= mayor){
+                    mayor = numero;
+                }else{
+                    mayor = mayor;
+                }
+                cont++;
+            }
+
+            document.writeln("<p>El número mayor es: " + mayor);
+        </script>
+    </head>
+    <body>
+        <p>
+            <span>inicializar contador en cero</span><br>
+            <span>inicializar numero en cero</span><br>
+            <span>inicializar mayor en cero</span><br><br>
+            <span>mientras que contador sea diferente de diez</span><br>
+            <span class="ind">recibir como entrada el siguiente numero</span><br>
+            <span class="ind">si numero es mayor o igual que mayor</span><br>
+            <span class="ind2">mayor es igual a numero</span><br>
+            <span class="ind">de lo contrario</span><br>
+            <span class="ind2">mayor es igual a mayor</span><br>
+            <span>sumar contador en uno</span><br><br>
+            <span>imprimir el numero mayor</span>
+        </p>
+    </body>
+</html>

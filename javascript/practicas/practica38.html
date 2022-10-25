@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Practica 7.14</title>
+        <script>
+            var hr1, hr2, hr3, th1, th2, th3;
+            var hora1, hora2, hora3, tarifa1, tarifa2, tarifa3, sueldo1, sueldo2, sueldo3;
+
+            hr1 = window.prompt("Escriba las horas de trabajo del empleado 1");
+            hora1 = parseInt(hr1);
+            th1 = window.prompt("Escriba la tarifa por hora del empleado 1");
+            tarifa1 = parseInt(th1);
+            if(hora1 > 40){
+                sueldo1 = tarifa1 * 40;
+                hora1 -= 40;
+                sueldo1 += (tarifa1 * 1.5) * hora1;
+            }else{
+                sueldo1 = tarifa1 * hora1;
+            }
+            document.writeln("<p>El sueldo bruto del empleado 1 es de: " + sueldo1 + "</p>");
+
+            hr2 = window.prompt("Escriba las horas de trabajo del empleado 2");
+            hora2 = parseInt(hr2);
+            th2 = window.prompt("Escriba la tarifa por hora del empleado 2");
+            tarifa2 = parseInt(th2);
+            if(hora2 > 40){
+                sueldo2 = tarifa2 * 40;
+                hora2 -= 40;
+                sueldo2 += (tarifa2 * 1.5) * hora2;
+            }else{
+                sueldo2 = tarifa2 * hora2;
+            }
+            document.writeln("<p>El sueldo bruto del empleado 2 es de: " + sueldo2 + "</p>");
+            
+            hr3 = window.prompt("Escriba las horas de trabajo del empleado 3");
+            hora3 = parseInt(hr3);
+            th3 = window.prompt("Escriba la tarifa por hora del empleado 3");
+            tarifa3 = parseInt(th3);
+            if(hora3 > 40){
+                sueldo3 = tarifa3 * 40;
+                hora3 -= 40;
+                sueldo3 += (tarifa3 * 1.5) * hora3;
+            }else{
+                sueldo3 = tarifa3 * hora3;
+            }
+            document.writeln("<p>El sueldo bruto del empleado 3 es de: " + sueldo3 + "</p>");
+        </script>
+    </head>
+    <body>
+    
+    </body>
+</html>
