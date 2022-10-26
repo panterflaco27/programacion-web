@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Practica 7.16</title>
+        <style>
+            tr{
+                text-align: center;
+            }
+        </style>
+        <script>
+            var n = 1;
+
+            document.writeln("<table border='1'>");
+            document.writeln(
+                "<thead>"+
+                    "<tr>"+
+                        "<th>N</th>"+
+                        "<th>10*N</th>"+
+                        "<th>100*N</th>"+
+                        "<th>1000*N</th>"+
+                    "</tr>"+
+                "</thead>"
+            );
+            document.writeln("<tbody>");
+            
+            while (n <= 6){
+                document.writeln("<tr>"+
+                    "<td>" + n + "</td>"+
+                    "<td>" + (n * 10) + "</td>"+
+                    "<td>" + (n * 100) + "</td>"+
+                    "<td>" + (n * 1000) + "</td>"+
+                    "</tr>");
+                n++;
+            }
+            
+            document.writeln("</tbody>");
+            document.writeln("</table>");
+        </script>
+    </head>
+    <body>
+    
+    </body>
+</html>

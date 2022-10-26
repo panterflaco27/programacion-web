@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Practica 7.17</title>
+        <script>
+            var num, numero, mayor1 = mayor2 = cont = 0;
+
+            while(cont !=10){
+                num = window.prompt("Escrima el " + (cont+1) + " entero:");
+                numero = parseInt(num);
+
+                if(numero >= mayor1){
+                    mayor1 = numero;
+                }else if(numero >= mayor2){
+                    mayor1 = mayor1;
+                    mayor2 = numero;
+                }else{
+                    mayo2 = mayor2;
+                }
+                cont++;
+            }
+            document.writeln("<p>El primer número mayor es: " + mayor1 + "<br>El segundo número mayor es: " + mayor2 + "</p>");
+        </script>
+    </head>
+    <body>
+    
+    </body>
+</html>
