@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Practica 7.19</title>
+        <style type="text/css">
+            em{
+                color: blue;
+            }
+        </style>
+    </head>
+    <body>
+        <h3>Determine la salida de  ada uno de los siguientes segmentos 
+            de c&oacute;digo, cuando x es 9 y y es 11, y cuando x es 11 y y es 9</h3>
+        
+        <p>
+            <strong> a) <br>
+                if ( x < 10 ) <br>
+                if ( y > 10 ) <br>
+                document.writeln( "&lt;p>*****&lt;/p>" ); <br>
+                else <br>
+                document.writeln( "&lt;p>#####&lt;/p>" ); <br>
+                document.writeln( "&lt;p>$$$$$&lt;/p>" ); <br>
+        </strong>
+            <em>R: x = 9 y y = 11 imprime ***** porque y es mayor a 10 e 
+                imprime $$$$$ porque x es menor a 10</em><br>
+            <em>R: x = 11 y y = 9 imprime $$$$$ porque y es menor a 10</em>
+        </p>
+        <p>
+            <strong>b) <br>
+                if ( x < 10 ) <br>
+                { <br>
+                if ( y > 10 ) <br>
+                document.writeln( "&lt;p>*****&lt;/p>" ); <br>
+                } <br>
+                else <br>
+                { <br>
+                document.writeln( "&lt;p>#####&lt;/p>" ); <br>
+                document.writeln( "&lt;p>$$$$$&lt;/p>" ); <br>
+                } <br>
+            </strong>
+            <em>R: x = 9 y y = 11, imprime ***** ya que x es menor a 10 y y es 
+                mayor a 10</em> <br>
+            <em>R: x = 11 y y = 9, imprime ##### y $$$$$ porque x es mayor a 10</em>
+        </p>
+    </body>
+</html>
