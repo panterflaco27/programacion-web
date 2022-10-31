@@ -4,10 +4,10 @@
         <meta charset="UTF-8">
         <title>Practica 7.20</title>
         <script>
-            var pal, numero;
+            var num, numero;
 
-            pal = window.prompt("Escriba un entero de 5 dígitos");
-            numero = parseInt(pal);
+            num = window.prompt("Escriba un entero de 5 dígitos");
+            numero = parseInt(num);
 
             var uni, dec, cen, mi, dm, val = 1;
 
@@ -20,8 +20,8 @@
 
                 if(numero > 99999 | numero < 10000){
                     alert("El número no es de 5 dígitos");
-                    pal = window.prompt("Escriba un entero de 5 dígitos");
-                    numero = parseInt(pal);
+                    num = window.prompt("Escriba un entero de 5 dígitos");
+                    numero = parseInt(num);
                     val = 1;
                 }else{
                     if(uni == dm && dec == mi){

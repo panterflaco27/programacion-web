@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Practica 7.22</title>
+        <script>
+            var num, numero, uni, dec, cen, mi, val;
+
+            num = window.prompt("Escriba un entero de 4 dígitos");
+            numero = parseInt(num);
+
+            uni = (numero % 10000 - numero % 1000) / 1000;
+            dec = (numero % 1000 - numero % 100) / 100;
+            cen = (numero % 100 - numero % 10) / 10;
+            mi = numero % 10;
+            
+            uni = (uni + 7) % 10;     //(suma del digito mas 7) modulo 10
+            dec = (dec + 7) % 10;
+            cen = (cen + 7) % 10;
+            mi = (mi + 7) % 10;
+
+            //reemplazar el primero con el tercero y segundo con el cuarto
+            document.writeln("" + cen + "" + mi + "" + uni + "" + dec + "");
+        </script>
+    </head>
+    <body>
+    
+    </body>
+</html>

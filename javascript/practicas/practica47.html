@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Practica 7.23</title>
+        <script>
+            var num, numero, uni, dec, cen, mi, val;
+
+            num = window.prompt("Escriba un entero de 4 dígitos para decifrarlo");
+            numero = parseInt(num);
+
+            uni = (numero % 10000 - numero % 1000) / 1000;
+            dec = (numero % 1000 - numero % 100) / 100;
+            cen = (numero % 100 - numero % 10) / 10;
+            mi = numero % 10;
+
+            uni = ((uni - 7) / 2)%1;
+            dec = (dec - 7) / 2;
+            cen = (cen - 7) / 2;
+            mi = (mi - 7) / 2;
+            //regresar el tercero al primero y el cuarto al segundo
+            document.writeln("" + cen + "" + mi + "" + uni + "" + dec + "");
+        </script>
+    </head>
+    <body>
+    
+    </body>
+</html>
