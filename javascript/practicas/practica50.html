@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Practica 8.3</title>
+        <style type="text/css">
+            em{
+                color: blue;
+            }
+            .ind{
+                padding-left: 2em;
+            }
+            .ind2{
+                padding-left: 4em;
+            }
+        </style>
+    </head>
+    <body>
+        <h3>Encuentre el error en cada uno de los siguientes segmentos de c&oacute;digo, y explique c&oacute;mo corregirlo:</h3>
+        <p>
+            <strong>a)<br>x = 1;</strong><br>
+            <strong>while (x <= 10);</strong><br>
+            <strong class="ind">++x;</strong><br>
+            <strong>}</strong><br>
+            <em>R: En el while hay un ; que no deberia ir ah&iacute;, en todo caso deberia ser una {, para as&iacute; poder ejecutar 
+                el bloque de instrucciones que se encuentra dentro del while</em>
+        </p>
+        <p>
+            <strong>b)<br>switch (n)</strong><br>
+            <strong>{</strong><br>
+            <strong class="ind">case 1:</strong><br>
+            <strong class="ind2">document.writeln("El n&uacute;mero es 1");</strong><br>
+            <strong class="ind">case 2:</strong><br>
+            <strong class="ind2">document.writeln("El n&uacute;mero es 2");</strong><br>
+            <strong class="ind2">break;</strong><br>
+            <strong class="ind">default:</strong><br>
+            <strong class="ind2">document.writeln("El n&uacute;mero no es 1 ni 2");</strong><br>
+            <strong class="ind2">break;</strong><br>
+            <strong>}</strong><br>
+            <em>R: En el case 1 falta un break para poder salir del switch, la soluci&oacute;n seria agregar el break</em>
+        </p>
+        <p>
+            <strong>c) El siguiente c&oacute;digo debe imprimir los valores 1 a 10:</strong><br>
+            <strong>n = 1;</strong><br>
+            <strong>while (n < 10)</strong><br>
+            <strong class="ind">document.writeln(n++);</strong><br>
+            <em>R: el operador no es el correcto, ya que solo llegaria a 9, se puede cambiar a <= 10 o < 11</em>
+        </p>
+    </body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Practica 8.2</title>
+        <style type="text/css">
+            em{
+                color: blue;
+            }
+            .ind{
+                padding-left: 2em;
+            }
+            .ind2{
+                padding-left: 4em;
+            }
+        </style>
+    </head>
+    <body>
+        <h3>Escriba una instrucci&oacute;n o un conjunto de instrucciones en JavaScript para realizar cada una de las siguientes tareas</h3>
+        <p>
+            <strong>a) Sumar los enteros impares entre 1 y 99</strong><br>
+            <em>R: <br>var suma = 0;</em><br>
+            <em class="ind">for (var cuenta = 1; cuenta <= 99; cuenta += 2)</em><br>
+            <em class="ind">{</em><br>
+            <em class="ind2">suma += cuenta;</em><br>
+            <em class="ind">}</em>
+        </p>
+        <p>
+            <strong>Calcular el valor de 2.5 elevado a la potencia de 3</strong><br>
+            <em>R: <br>Math.pow(2.5, 3);</em>
+        </p>
+        <p>
+            <strong>c) Imprimir los elementos del 1 al 20 mediante el uso de un ciclo while y la variable contador x.
+                Suponga que la varuable x sea ha declarado, pero no se ha inicializado. Imprima solamente cinco enteros 
+                por l&iacute;nea</strong><br>
+            <em>R: <br>var x = 1;</em><br>
+            <em>document.writeln("&lt;p>");</em><br>
+            <em>while (x <= 20)</em><br>
+            <em>{</em><br>
+            <em class="ind">document.writeln(x + " ");</em><br>
+            <em class="ind">if (x % 5 == 0)</em><br>
+            <em class="ind2">document.writeln("&lt;/p>&lt;p>");</em><br>
+            <em class="ind">++x;</em><br>
+            <em>}</em><br>
+            <em>document.writeln("&lt;/p>");</em>
+        </p>
+        <p>
+            <strong>d) Repita el ejercicio 8.2 (c) pero ahora use una instrucci&oacute;n for</strong><br>
+            <em>R: <br>for (var x = 1; x < 99; x += 2)</em><br>
+            <em>{</em><br>
+            <em class="ind">document.writeln(x + " ");</em><br>
+            <em class="ind">if (x % 5 == 0)</em><br>
+            <em class="ind2">document.writeln("&lt;/p>&lt;p>");</em><br>
+            <em>}</em><br>
+            <em>document.writeln(&lt;/p>);</em>
+        </p>
+    </body>
+</html>
