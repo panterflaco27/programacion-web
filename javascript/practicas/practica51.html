@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Practica 8.4</title>
+        <style type="text/css">
+            em{
+                color: blue;
+            }
+            .ind{
+                padding-left: 2em;
+            }
+            .ind2{
+                padding-left: 4em;
+            }
+        </style>
+    </head>
+    <body>
+        <h3>Encuentra el error en cada uno de los siguientes segmentos de c&oacute;digo</h3>
+        <p>
+            <strong>a)<br>For (x = 100, x >= 1, ++x)</strong><br>
+            <strong class="ind">document.writeln(x);</strong><br>
+            <em>R: el for tiene la primera letra may&uacute;scula, las condiciones deben llevar [;], no [,] y las condiciones estan mal, deberia ser --x</em>
+        </p>
+        <p>
+            <strong>b) El siguiente c&oacute;digo debe imprimirse sin importar si el valor entero es par o impar:</strong><br>
+            <strong>switch (valor % 2)</strong><br>
+            <strong>{</strong><br>
+            <strong class="ind">case 0:</strong><br>
+            <strong class="ind2">document.writeln("Entero par");</strong><br>
+            <strong class="ind">case 1:</strong><br>
+            <strong class="ind2">document.writeln("Entero impar");</strong><br>
+            <strong>}</strong><br>
+            <em>R: De manera r&aacute;pida, seria quitar el par o impar para solo imprimir entero</em>
+        </p>
+        <p>
+            <strong>c) El siguiente c&oacute;digo debe imprimir los enteros impares del 19 al 1:</strong><br>
+            <strong>for (x = 19; x >= 1; x += 2)</strong><br>
+            <strong class="ind">document.writeln(x);</strong><br>
+            <em>R: El valor esta mal, debria de se x = 1, no x = 19, ya que esta sumando x += 2 y nunca terminaria porque x es >= a 1</em>
+        </p>
+        <p>
+            <strong>d) El siguiente c&oacute;digo debe imprimir los enteros pares del 2 al 100:</strong><br>
+            <strong>contador = 2;</strong><br>
+            <strong>do {</strong><br>
+            <strong class="ind">document.writeln(contador);</strong><br>
+            <strong class="ind">contador += 2;</strong><br>
+            <strong>}While (contador < 100);</strong><br>
+            <em>R: el while tiene la primera letra may&uacute;scula</em>
+        </p>
+    </body>
+</html>
