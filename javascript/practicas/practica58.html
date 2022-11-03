@@ -3,46 +3,70 @@
     <head>
         <meta charset="UTF-8">
         <title>Practica 8.11</title>
-        <script>
-            var cantidad, cant, produc, producto, valor;
-            var producto1 = 0;
-            var producto2 = 0;
-            var producto3 = 0;
-            var producto4 = 0;
-            var producto5 = 0;
-            var total = 0;
-            for ( var dias = 1; dias <= 7; ++dias ){
-                window.alert("Día:" + dias);
-                while(produc != -1){
-                    producto = window.prompt("Ingrese el número del producto: ");
-                    produc = parseInt(producto);
-                    if(produc != -1){
-                        cantidad = window.prompt("Ingrese la cantidad vendida: ");
-                        cant = parseInt(cantidad);
-                        switch ( produc ){
-                            case 1: 
-                                valor = 2.98;
-                                producto1 += cant * valor;
-                            case 2: 
-                                valor = 4.50;
-                                producto2 += cant * valor;
-                            case 3: 
-                                valor = 9.98;
-                                producto3 += cant * valor;
-                            case 4: 
-                                valor = 4.49;
-                                producto4 += cant * valor;
-                            case 5: 
-                                valor = 6.87;
-                                producto5 += cant * valor;
-                            default:
-                                window.alert("Ingrese un producto valido.");
-                        }
-                    }   
-                }
+        <style type="text/css">
+            em{
+                color: blue;
             }
-            total = producto1 + producto2 + producto3 + producto4 + producto5;
-            document.writeln("<h3>El valor total de ventas de la semana pasada es: "+ total +"</h3>");
+        </style>
+        <script>
+            var producto, prod, cantidad, cant, valor, total = 0;
+
+            for (var i  = 1; i <= 7; ++i){
+                window.alert("Día " + i);
+                
+                do{
+                    producto = window.prompt("Escriba el número del producto (6 para siguiente día)");
+                    prod = parseInt(producto);
+                    switch (prod){
+                        case 1:
+                            cantidad = window.prompt("Escriba la cantidad vendida");
+                            cant = parseInt(cantidad);
+
+                            valor = 2.98;
+
+                            total += (cant * valor);
+                            break;
+                        case 2:
+                            cantidad = window.prompt("Escriba la cantidad vendida");
+                            cant = parseInt(cantidad);
+
+                            valor = 4.50;
+
+                            total += (cant * valor);
+                            break;
+                        case 3:
+                            cantidad = window.prompt("Escriba la cantidad vendida");
+                            cant = parseInt(cantidad);
+
+                            valor = 9.98;
+
+                            total += (cant * valor);
+                            break;
+                        case 4:
+                            cantidad = window.prompt("Escriba la cantidad vendida");
+                            cant = parseInt(cantidad);
+
+                            valor = 4.49;
+
+                            total += (cant * valor);
+                            break;
+                        case 5:
+                            cantidad = window.prompt("Escriba la cantidad vendida");
+                            cant = parseInt(cantidad);
+
+                            valor = 6.87;
+
+                            total += (cant * valor);
+                            break;
+                        case 6:
+                            break;
+                        default:
+                            window.alert("Ingrese un producto valido!!!");
+                    }
+                } while (prod <= 5);
+            }
+
+            document.writeln("<strong>El total de ventas de la seman es de: </strong><em>" + total + "</em>");
         </script>
     </head>
     <body>
