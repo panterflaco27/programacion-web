@@ -12,10 +12,11 @@
             }
         </style>
         <script>
+            document.writeln("<button><a href='/menu.html'>regresar al menu</a></button><br>");
             var num, numero, mayor = 0, cont = 0;
 
             while(cont != 10){
-                num = window.prompt("Escrima el " + (cont+1) + " entero:");
+                num = window.prompt("Escriba el " + (cont+1) + " entero:");
                 numero = parseInt(num);
 
                 if(numero >= mayor){
