@@ -33,7 +33,43 @@ de practica29.html a practica37.html
 ejemplos del capitulo 5 css parte 2
 
 de ejemplo32.html a ejemplo49.html
-
+_________________________________
 practicas del capitulo 5 css parte 2
 
 de practica38.html a practica53.html
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+carpeta JavaScript
+
+ejemplos del capitulo 6 JavaScript introduccion
+
+de ejemplo01.html a ejemplo06.html
+_________________________________
+practicas del capitulo 6 JavaScript introduccion
+
+de practica01.html a practica24.html
+
+=================================
+
+carpeta JavaScript
+
+ejemplos del capitulo 7 JavaScript instrucciones de control 1
+
+de ejemplo07.html a ejemplo10.html
+_________________________________
+practicas del capitulo 7 JavaScript instrucciones de control 1
+
+de practica25.html a practica47.html
+
+=================================
+
+carpeta JavaScript
+
+ejemplos del capitulo 8 JavaScript instrucciones de control 2
+
+de ejemplo11.html a ejemplo18.html
+_________________________________
+practicas del capitulo 8 JavaScript instrucciones de control 2
+
+de practica48.html a practica60.html
