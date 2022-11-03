@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<!--fig. 9.3: maximo.html-->
+<!--funcion maximo definida por el programador-->
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>M&aacute;ximo de tres valores</title>
+        <style type="text/css">
+            p{
+                margin: 0;
+            }
+        </style>
+        <script>
+
+            var entrada1 = window.prompt("Escriba el primer número", "0");
+            var entrada2 = window.prompt("Escriba el segundo número", "0");
+            var entrada3 = window.prompt("Escriba el tercer número", "0");
+
+            var valor1 = parseInt(entrada1);
+            var valor2 = parseInt(entrada2);
+            var valor3 = parseInt(entrada3);
+
+            var valorMax = maximo(valor1, valor2, valor3);
+
+            document.writeln("<p>Primer n&uacute;mero: " + valor1 + "</p>" +
+            "<p>Segundo n&uacute;mero: " + valor2 + "</p>" +
+            "<p>Tercer n&uacute;mero: " + valor3 + "</p>" +
+            "<p>El m&aacute;ximo es: " + valorMax + "</p>");
+
+            //definicion de la funcion maximo (se llama desde la linea 24)
+            function maximo(x, y, z){
+                return Math.max(x, Math.max(y, z));
+            }//fin de la funcion maximo
+        </script>
+    </head>
+    <body>
+    
+    </body>
+</html>
