@@ -16,8 +16,8 @@ function iniciar(){
         n2[i] = i;
     } //fin de for
 
-    imprimirArreglo("Arreglo n1:", document.getElementById("salida1"));
-    imprimirArreglo("Arreglo n2:", document.getElementById("salida2"));
+    imprimirArreglo("Arreglo n1:", n1, document.getElementById("salida1"));
+    imprimirArreglo("Arreglo n2:", n2, document.getElementById("salida2"));
 } //fin de la funcion iniciar
 
 //imprime el encabezado seguido de una tabla de dos columnas
