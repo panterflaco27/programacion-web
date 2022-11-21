@@ -50,7 +50,7 @@ function actualizarTablaFrecuencias(){
 
     //crear filas de tabla para frecuencias
     for (var i = 1; i < longitud; ++i){
-        resultados += "<tr><td>1</td><td>" + frecuencia[i] + "</td><td>" +
+        resultados += "<tr><td>" + i + "</td><td>" + frecuencia[i] + "</td><td>" +
         formatoPorciento(frecuencia[i] / totalDados) + "</td></tr>";
     }//fin de for
 
