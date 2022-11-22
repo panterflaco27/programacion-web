@@ -81,3 +81,38 @@ carpeta JavaScript
 ejemplos capitulo 9 JavaScript funciones
 
 de ejemplo19.html a ejemplo27.html
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+carpeta JavaScript2
+
+ejemplos capitulo 10
+
+de ejemplo01.html a ejemplo09.html
+
+_________________________________
+practicas capitulo 10
+
+de practica01.html a practica17.html
+==================================
+
+carpeta JavaScript2
+
+ejemplos capitulo 11
+de ejemplo10.html a ejemplo14.html
+_________________________________
+practicas capitulo 11
+de practica18.html a practica35.html
+
+==================================
+
+carpeta JavaScript2
+
+ejemplos capitulo 12
+de ejemplo15.html a ejemplo19.html
+==================================
+
+carpeta JavaScript2
+
+ejemplos capitulo 13
+de ejemplo20.html a ejemplo24.html
